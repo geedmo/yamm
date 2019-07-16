@@ -1,0 +1,120 @@
+// Extra components navbar
+nav.yamm.navbar.navbar-expand-lg.navbar-light.bg-light
+  a.navbar-brand(href='#') Yamm Megamenu
+  button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbar-collapse-2' aria-controls='navbar-collapse-2' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+  #navbar-collapse-2.navbar-collapse.collapse
+    ul.navbar-nav
+      // Media Example
+      li.nav-item.dropdown
+        a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown')
+          | Media
+        .dropdown-menu.p-0
+          .yamm-content
+            ul.list-unstyled
+              li.media
+                img.mr-3(src='demo/img/64x64.gif', alt='64x64')
+                .media-body
+                  h5.mt-0.mb-1 Media heading
+                  | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante.
+              li.media.mt-4
+                img.mr-3(src='demo/img/64x64.gif', alt='64x64')
+                .media-body
+                  h5.mt-0.mb-1 Media heading
+                  | Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.
+      // Tables
+      li.nav-item.dropdown
+        a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown')
+          | Tables
+        .dropdown-menu.p-0
+          .yamm-content
+            table.table.table-hover.table-bordered.mb-0
+              thead
+                tr
+                  th #
+                  th First Name
+                  th Last Name
+                  th Username
+                  th First Name
+                  th Last Name
+                  th Username
+              tbody
+                tr
+                  td 1
+                  td Mark
+                  td Otto
+                  td @mdo
+                  td Mark
+                  td Otto
+                  td @mdo
+                tr
+                  td 2
+                  td Jacob
+                  td Thornton
+                  td @fat
+                  td Jacob
+                  td Thornton
+                  td @fat
+                tr
+                  td 3
+                  td(colspan='2') Larry the Bird
+                  td @twitter
+                  td(colspan='2') Larry the Bird
+                  td @twitter
+      // Thumbnails demo
+      li.dropdown
+        a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown')
+          | Thumbnails
+        .dropdown-menu.p-0
+          .yamm-content
+            .row
+              .col-sm-4
+                .card
+                  img(alt='260x130', src='demo/img/260.jpg')
+                  .card-body
+                    h5.card-title Thumb Label
+                    p.card-text
+                      | Mazagran doppio half and half aftertaste organic, rich doppio
+                    p.card-text
+                      a.btn.btn-primary(href='#') Action
+                      |
+                      a.btn.btn-default(href='#') Action
+              .col-sm-4
+                .card
+                  img(alt='260x130', src='demo/img/260.jpg')
+                  .card-body
+                    h5.card-title Thumb Label
+                    p.card-text
+                      | Mazagran doppio half and half aftertaste organic, rich doppio
+                    p.card-text
+                      a.btn.btn-primary(href='#') Action
+                      |
+                      a.btn.btn-default(href='#') Action
+              .col-sm-4
+                .card
+                  img(alt='260x130', src='demo/img/260.jpg')
+                  .card-body
+                    h5.card-title Thumb Label
+                    p.card-text
+                      | Mazagran doppio half and half aftertaste organic, rich doppio
+                    p.card-text
+                      a.btn.btn-primary(href='#') Action
+                      |
+                      a.btn.btn-default(href='#') Action
+
+    ul.navbar-nav.ml-auto
+        // Forms
+        .nav-item.dropdown
+          a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown')
+            | Forms
+          .dropdown-menu.dropdown-menu-right.p-0
+            .yamm-content
+              form(action='send.php')
+                .form-group
+                  input.form-control#inputName(type='text', placeholder='Name')
+                .form-group
+                  input.form-control#inputEmail(type='password', placeholder='Email')
+                .form-group
+                  textarea.form-control(placeholder="Write your message..")
+                .form-group
+                  button.btn.btn-success(type='submit') Send

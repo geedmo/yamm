@@ -1,0 +1,68 @@
+/*!
+ * Yamm!
+ * Yet another megamenu for Bootstrap
+ * http://geedmo.github.com/yamm
+ *
+ * Demo styles
+ */
+
+/* layout */
+body {
+    padding-bottom: 40px;
+    color: #666;
+}
+pre {
+    margin: 0;
+    padding: 10px 20px !important;
+}
+
+footer {
+    margin-top: 200px;
+}
+
+/* demo presentation */
+.container,
+.jumbotron .container {
+    width: auto;
+    max-width: 1170px;
+}
+
+.jumbotron {
+    margin: 55px 0 60px 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* menu styes */
+.list-unstyled,
+.list-unstyled ul {
+    min-width: 120px;
+}
+
+/*  Accordion needs a width to avoid auto resize due to
+    its absolute position within dropdowns. Desktops only. */
+@media (min-width: 992px) {
+    #accordionExample {
+        width: 480px;
+    }
+}
+
+/* Grid demo styles */
+.grid-demo {
+    padding: 10px 30px;
+}
+
+.grid-demo [class*='col-'] {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1em;
+    text-align: center;
+    line-height: 2;
+    background-color: #e5e1ea;
+    border: 1px solid #d1d1d1;
+}
+
+pre.prettyprint {
+    border-color: #d9e0ef !important;
+    border-radius: 4px;
+}

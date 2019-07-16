@@ -1,0 +1,125 @@
+// Demo navbar
+nav.yamm.navbar.navbar-expand-lg.navbar-light.bg-light.fixed-top
+  .container.w-100
+    a.navbar-brand(href='#') Yamm Megamenu
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbar-collapse-1' aria-controls='navbar-collapse-1' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+    #navbar-collapse-1.navbar-collapse.collapse
+      ul.navbar-nav.mr-auto
+        // Classic list
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown')
+            | List
+          .dropdown-menu.p-0
+            // Content container to add padding
+            .yamm-content
+              .row
+                ul.col-sm-3.list-unstyled
+                  li
+                    p: strong Section Title
+                  li List Item
+                  li List Item
+                  li List Item
+                  li List Item
+                  li List Item
+                  li List Item
+                ul.col-sm-3.list-unstyled
+                  li
+                    p: strong Links Title
+                  li: a(href='#')  Link Item
+                  li: a(href='#')  Link Item
+                  li: a(href='#')  Link Item
+                  li: a(href='#')  Link Item
+                  li: a(href='#')  Link Item
+                  li: a(href='#')  Link Item
+                ul.col-sm-3.list-unstyled
+                  li
+                    p: strong Section Title
+                  li List Item
+                  li List Item
+                  li List Item
+                  li List Item
+                  li List Item
+                  li List Item
+                ul.col-sm-3.list-unstyled
+                  li
+                    p: strong Section Title
+                  li List Item
+                  li List Item
+                  li
+                    ul
+                      li: a(href='#')  Link Item
+                      li: a(href='#')  Link Item
+                      li: a(href='#')  Link Item
+        // Accordion demo
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown')
+            | Accordion
+          .dropdown-menu.p-0
+            .yamm-content
+              #accordionExample.accordion
+                .card
+                  .card-header
+                    h2.mb-0
+                      button.btn.btn-link(type="button" data-toggle='collapse', data-target='#collapseOne')
+                        | Collapsible Group Item #1
+                  #collapseOne.collapse.show(data-parent='#accordionExample')
+                    .card-body: .card-text
+                      | Ut consectetur ullamcorper purus a rutrum.
+                      br
+                      | Etiam dui nisi, hendrerit feugiat scelerisque et, cursus eu magna.
+                .card
+                  .card-header
+                    h2.mb-0
+                      button.btn.btn-link.collapsed(type="button" data-toggle='collapse', data-target='#collapseTwo')
+                        | Collapsible Group Item #2
+                  #collapseTwo.collapse(data-parent='#accordionExample')
+                    .card-body: .card-text
+                      | Ut consectetur ullamcorper purus a rutrum.
+                      br
+                      | Etiam dui nisi, hendrerit feugiat scelerisque et, cursus eu magna.
+                .card
+                  .card-header
+                    h2.mb-0
+                      button.btn.btn-link.collapsed(type="button" data-toggle='collapse', data-target='#collapseThree')
+                        | Collapsible Group Item #3
+                  #collapseThree.collapse(data-parent='#accordionExample')
+                    .card-body: .card-text
+                      | Ut consectetur ullamcorper purus a rutrum.
+                      br
+                      | Etiam dui nisi, hendrerit feugiat scelerisque et, cursus eu magna.
+        // Classic dropdown
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown')
+            | Classic
+          .dropdown-menu(role='menu')
+            a.dropdown-item(tabindex='-1', href='#')  Action
+            a.dropdown-item(tabindex='-1', href='#')  Another action
+            a.dropdown-item(tabindex='-1', href='#')  Something else here
+            .dropdown-divider
+            a.dropdown-item(tabindex='-1', href='#')  Separated link
+        // Pictures
+        li.nav-item.dropdown.yamm-fw
+          a.nav-link.dropdown-toggle(href='#', data-toggle='dropdown')
+            | Pictures
+          .dropdown-menu.p-0
+              .yamm-content
+                .row
+                  .col-xs-6.col-sm-2
+                    a(href='#')
+                      img.img-thumbnail.img-fluid(alt='150x190', src='demo/img/190.jpg')
+                  .col-xs-6.col-sm-2
+                    a(href='#')
+                      img.img-thumbnail.img-fluid(alt='150x190', src='demo/img/190.jpg')
+                  .col-xs-6.col-sm-2
+                    a(href='#')
+                      img.img-thumbnail.img-fluid(alt='150x190', src='demo/img/190.jpg')
+                  .col-xs-6.col-sm-2
+                    a(href='#')
+                      img.img-thumbnail.img-fluid(alt='150x190', src='demo/img/190.jpg')
+                  .col-xs-6.col-sm-2
+                    a(href='#')
+                      img.img-thumbnail.img-fluid(alt='150x190', src='demo/img/190.jpg')
+                  .col-xs-6.col-sm-2
+                    a(href='#')
+                      img.img-thumbnail.img-fluid(alt='150x190', src='demo/img/190.jpg')

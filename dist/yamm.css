@@ -1,0 +1,29 @@
+/*!
+ * Yamm! - Yet another megamenu for Bootstrap
+ * http://geedmo.github.com/yamm
+ *
+ * @geedmo - Licensed under the MIT license
+ */
+.yamm .collapse,
+.yamm .dropup,
+.yamm .dropdown {
+  position: static;
+}
+
+.yamm .container {
+  position: relative;
+}
+
+.yamm .dropdown-menu {
+  left: auto;
+}
+
+.yamm .yamm-content {
+  padding: 1rem;
+}
+
+.yamm .dropdown.yamm-fw .dropdown-menu,
+.yamm .dropup.yamm-fw .dropdown-menu {
+  left: 0;
+  right: 0;
+}

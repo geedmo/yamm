@@ -1,0 +1,137 @@
+doctype
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    meta(name='description', content='Yet another megamenu for Bootstrap')
+    meta(name='author', content='@geedmo')
+    title Yamm! Megamenu for Bootstrap
+
+    // Bootstrap and demo styles
+    link(href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', rel='stylesheet')
+    link(href='demo/css/demo.css', rel='stylesheet')
+
+    // Yamm styles
+    link(href='dist/yamm.css', rel='stylesheet')
+
+  body
+
+    include navbar-fixed.pug
+
+    .jumbotron
+
+      .container
+
+        h1.display-1 Hello, Yamm 4!
+        p This is #[i Yet another megamenu] for Bootstrap from Twitter.
+        p Lightweight and pure CSS megamenu that uses the standard navbar markup and the fluid grid system classes from Bootstrap 4. Work for fixed and responsive layout and has the facility to include (almost) any Bootstrap elements.
+        p This project is currently hosted on Github and is the sequel to #[a.text-muted(href="https://geedmo.github.com/yamm", title="Yamm for Bootstrap", target="_blank") Yamm]
+        br
+        a.mr-4.btn.btn-secondary.btn-lg(href='https://github.com/geedmo/yamm') View on Github
+        |
+        a.btn.btn-primary.btn-lg(href='https://github.com/geedmo/yamm/archive/master.zip') Download
+
+    .container
+      .row
+        .col-md-4
+          p.lead Markup
+          ol
+              li
+                  p Reuse navbar markup and add class #[code .yamm] at the top.
+              li
+                  p Then add your markup into the #[code .dropdown-menu]
+              li
+                  p Optionally use #[code .yamm-content] to wrap content with padding.
+              li
+                  p #[code .dropdown-item] is ommited to avoid default background and text color styling
+
+        .col-md-8
+          pre.prettyprint
+            | &lt;nav class="yamm navbar navbar-expand-lg navbar-light bg-light"&gt;
+            | ...
+            |      &lt;ul class="navbar-nav"&gt;
+            |        &lt;li class="nav-item dropdown"&gt;
+            |          &lt;a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"&gt;Dropdown&lt;/a&gt;
+            |          &lt;div class="dropdown-menu"&gt;
+            |            &lt;div class="yamm-content"&gt;
+            |              ...
+            |            &lt;/div&gt;
+            |          &lt;/div&gt;
+            |        &lt;/li&gt;
+            |      &lt;/ul&gt;
+            | ...
+            | &lt;/nav&gt;
+
+    .jumbotron
+      .container
+        p.lead Grid Example
+        include navbar-grid.pug
+    .container
+      .row
+        .col-md-4
+          p.lead Fullwidth
+          p By default every mega-dropdown will take the content size and is possible to add #[code .yamm-fw] to #[code .dropdown] to expand it fullwidth
+
+          p: strong Yamm works better with fullwidth menus.
+
+        .col-md-8
+          pre.prettyprint
+            | &lt;nav class="yamm navbar navbar-expand-lg navbar-light bg-light"&gt;
+            | ...
+            |      &lt;ul class="navbar-nav"&gt;
+            |        &lt;li class="nav-item dropdown yamm-fw"&gt;
+            |          ...
+            |        &lt;/li&gt;
+            |      &lt;/ul&gt;
+            | ...
+            | &lt;/nav&gt;
+
+    .jumbotron
+      .container
+        p.lead More components
+        include navbar-more.pug
+
+    .container
+      .row
+        .col-md-4
+          p.lead JavaScript
+          p This code will prevent unexpected menu close when using some components (like accordion, forms, etc)
+
+        .col-md-8
+          pre.prettyprint
+            | $(document).on('click', '.yamm .dropdown-menu', function(e) {
+            |   e.stopPropagation()
+            | })
+
+      footer
+          .d-flex.border-top.py-4
+            .mr-auto
+              p
+                | MIT &copy; Geedmo 2019
+            .ml-auto
+                .d-flex
+                  div
+                    iframe.github-btn(src='https://ghbtns.com/github-btn.html?user=geedmo&repo=yamm&type=watch&count=true', allowtransparency='true', frameborder='0', scrolling='0', width='60px', height='20px')
+                  div
+                    iframe.github-btn(src='https://ghbtns.com/github-btn.html?user=geedmo&repo=yamm&type=fork&count=true', allowtransparency='true', frameborder='0', scrolling='0', width='60px', height='20px')
+                  div
+                    a.twitter-share-button(href='https://twitter.com/share', data-lang='en') Tweet
+
+
+    // /container
+
+    // Bootstrap core JavaScript
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js')
+    script(src='https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js' async)
+
+    script.
+      $(function() {
+        window.prettyPrint && prettyPrint()
+        $(document).on('click', '.yamm .dropdown-menu', function(e) {
+          e.stopPropagation()
+        })
+      })
+    // tweet and share :)
+    script
+      | !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
