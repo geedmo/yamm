@@ -55,7 +55,7 @@ Make sure all tests passes before sending a PR.
 * Github: [@geedmo](https://github.com/geedmo)
 
 
-## 📝 License
+## License
 
 Copyright © 2019 [@geedmo](https://github.com/geedmo).
 
