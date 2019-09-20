@@ -60,3 +60,19 @@ Make sure all tests passes before sending a PR.
 Copyright © 2019 [@geedmo](https://github.com/geedmo).
 
 This project is [MIT](https://github.com/geedmo/yamm/blob/master/LICENSE) licensed.
+
+
+## Sponsored content
+<p>
+    <a href="https://wrapbootstrap.com/theme/angle-bootstrap-admin-template-WB04HF123?ref=geedmo">
+        <img width="180px" src="https://i.imgur.com/1UcvtF7.jpg" alt="Angle - Bootstrap Admin Template" />
+        &nbsp;&nbsp;
+    </a>
+    <a href="https://wrapbootstrap.com/theme/inspinia-responsive-admin-theme-WB0R5L90S?ref=geedmo">
+        <img width="180px" src="https://i.imgur.com/UkuEfag.jpg" alt="INSPINIA - Responsive Admin Theme" />
+        &nbsp;&nbsp;
+    </a>
+    <a href="https://wrapbootstrap.com/theme/smartadmin-responsive-webapp-WB0573SK0?ref=geedmo">
+        <img width="180px" src="https://i.imgur.com/eo0j2fe.jpg" alt="SmartAdmin - Responsive WebApp" />
+    </a>
+</p>
