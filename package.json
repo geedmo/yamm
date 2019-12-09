@@ -1,6 +1,6 @@
 {
     "name": "@geedmo/yamm",
-    "version": "4.0.0",
+    "version": "4.0.1",
     "description": "Yet another megamenu for Bootstrap",
     "homepage": "http://geedmo.github.io/yamm/",
     "author": "@geedmo",
@@ -18,12 +18,12 @@
         "test": "tap test/basic.js"
     },
     "devDependencies": {
-        "less": "3.9.0",
-        "node-sass": "4.12.0",
+        "less": "3.10.3",
+        "node-sass": "4.13.0",
         "pug": "2.0.4",
         "pug-cli": "1.0.0-alpha6",
-        "stylus": "0.54.5",
-        "tap": "14.4.1"
+        "stylus": "0.54.7",
+        "tap": "14.10.1"
     },
     "nyc": {
         "temp-dir": "./node_modules/.nyc_output"
