@@ -19,7 +19,7 @@
     },
     "devDependencies": {
         "less": "3.10.3",
-        "node-sass": "4.13.0",
+        "node-sass": "7.0.0",
         "pug": "2.0.4",
         "pug-cli": "1.0.0-alpha6",
         "stylus": "0.54.7",
